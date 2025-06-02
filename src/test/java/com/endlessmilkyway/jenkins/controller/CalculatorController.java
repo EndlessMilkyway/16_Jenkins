@@ -21,13 +21,13 @@ public class CalculatorController {
     @GetMapping("/health")
     @ResponseBody
     public String health() {
-        return "it's ok";
+        return "it's Argo CD test pulling!";
     }
 
     @GetMapping("/plus")
     public ResponseEntity<CalculatorDTO> plusTowNumbers(CalculatorDTO calculatorDTO) {
 
-//        log.info("plus 핸들러에 전달되는 값 확인 : {}", calculatorDTO);
+        // log.info("plus 핸들러에 전달되는 값 확인 : {}", calculatorDTO);
 
         int result = calculatorService.plusTwoNumbers(calculatorDTO);
 
